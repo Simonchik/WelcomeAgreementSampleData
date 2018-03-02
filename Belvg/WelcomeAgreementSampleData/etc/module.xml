@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+  ~ BelVG LLC.
+  ~
+  ~  NOTICE OF LICENSE
+  ~
+  ~ This source file is subject to the EULA
+  ~ that is bundled with this package in the file LICENSE.txt.
+  ~ It is also available through the world-wide-web at this URL:
+  ~ https://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+  ~
+  ~  ********************************************************************
+  ~ @category   Belvg
+  ~ @package    Belvg_WelcomeAgreementSampleData
+  ~ @copyright  Copyright (c) 2010 - 2018 BelVG LLC. (https://belvg.com/)
+  ~ @author     Alexander Simonchik <support@belvg.com>
+  ~ @license    https://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+  ~
+  ~
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Belvg_WelcomeAgreementSampleData" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_SampleData"/>
+            <module name="Magento_Customer" />
+            <module name="Magento_Store" />
+            <module name="Belvg_WelcomeAgreement" />
+        </sequence>
+    </module>
+</config>
