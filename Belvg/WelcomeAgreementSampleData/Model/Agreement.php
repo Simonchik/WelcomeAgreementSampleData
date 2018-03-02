@@ -76,18 +76,6 @@ class Agreement
                 }
                 $row = $data;
 
-$aggr = $this->agreementFactory->create()
-    //->load($row['identifier'], 'identifier')
-    ->addData($row)
-    ->setStores([
-        \Magento\Store\Model\Store::DEFAULT_STORE_ID,
-        \Magento\Store\Model\Store::DISTRO_STORE_ID
-    ])
-    ->save();
-print_r([
-    $row,
-    $aggr->getData()
-]);
                 $this->agreementFactory->create()
                     //->load($row['identifier'], 'identifier')
                     ->addData($row)
